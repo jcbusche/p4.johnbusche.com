@@ -31,7 +31,7 @@
                 </li> 
 
                 <li>
-                    <a href='/posts/add'>New reading</a>
+                    <a href='/readings/add'>Add reading</a>
                 </li> 
                 
                 <li>

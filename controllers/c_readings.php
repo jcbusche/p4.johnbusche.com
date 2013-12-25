@@ -52,12 +52,11 @@ class readings_controller extends base_controller {
 
     }
 
-    public function r_read($post_id){
-
-        $to_read = 'WHERE post_id = ' .$content;
-        $read_array = explode(" ", $to_read);
+    public function r_read(){
 
         
+        $read_array = explode(" ", $text);
+        echo $read_array;
 
     }
 }
