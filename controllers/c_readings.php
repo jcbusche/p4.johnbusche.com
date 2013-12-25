@@ -14,12 +14,19 @@ class readings_controller extends base_controller {
 
     public function add() {
 
-        # Setup view
-        $this->template->content = View::instance('v_readings_add');
-        $this->template->title   = "New Reading";
+        if(!$this->user) {
+            Router::redirect("/users/login");
+        }
 
-        # Render template
-        echo $this->template;
+        else{
+
+            # Setup view
+            $this->template->content = View::instance('v_readings_add');
+            $this->template->title   = "New Reading";
+
+            # Render template
+            echo $this->template;
+        }
 
     }
 
