@@ -54,7 +54,7 @@ class readings_controller extends base_controller {
 
     public function r_read(){
 
-        $to_read = .$content;
+        $to_read = $post["content"];
         echo $to_read;
 
 
