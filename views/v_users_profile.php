@@ -13,9 +13,7 @@
 
 			    <p><?=$post['title']?></p>
 
-			    <script src = "../js/read.js.php">
-			    	var words = '<?=$post["content"]?>';
-			    </script>
+		
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
