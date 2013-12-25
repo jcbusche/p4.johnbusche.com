@@ -13,11 +13,9 @@
 
 			    <p><?=$post['title']?></p>
 
-			    <script>
-			    	var to_read = <? php echo $post['title']; ?>;
-			    	console.log(to_read);
 
-			    </script>			   
+
+			   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
@@ -75,7 +73,6 @@
 	</div>
 
 	<div id = 'display'>Your text will appear here.</div>
-
 
 
 <?php else: ?>
