@@ -58,9 +58,9 @@
 			        <input type = 'button' class = 'display-btn' id = 'saved' value = 'READ!'>
 				    <br><br>
 				</form>
-				    <form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
+				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
 						<input type="submit" name="delete" value="Delete"/>
-					</form>
+				</form>
 
 			</article>
 
@@ -70,7 +70,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script src = "js/read.js"></script>
+	<script src = "../js/read.js"></script>
 
 
 <?php else: ?>
