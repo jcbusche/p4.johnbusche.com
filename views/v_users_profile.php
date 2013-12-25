@@ -13,7 +13,11 @@
 
 			    <p><?=$post['title']?></p>
 
-			   
+			    <script>
+			    	var to_read = $post['title'];
+			    	console.log(to_read);
+
+			    </script>			   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
