@@ -13,24 +13,20 @@ $('.display-btn').click(function(){
     }
 
     else if (buttonType == 'saved'){
+        
 
-        var words = $(<?php echo  $post['content']; ?>);
+        $.ajax({
+            type: 'POST',
+            url: '../readings/r_read',
+
+            success: function(response) {
+
+                var words = response;
+            },
+
+        });
 
         words = words.split(' ');
-
-        // $.ajax({
-        //     type: 'POST',
-        //     url: '../readings/r_read',
-
-        //     success: function(response) {
-
-        //         var words = response;
-        //     },
-
-        //     data: {
-
-        //     }
-        // });
     }
 
     var numwords = words.length;
