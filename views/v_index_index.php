@@ -11,7 +11,7 @@
     <form>
         <textarea id = 'toread'  rows = "10" cols = "50">Place the text for your article here</textarea>
         <br><br>
-        <label for = "chunksize">Words per chunk<label>
+        <label for = "chunksize">Words per chunk</label>
         <select id = "chunksize">
             <option value= 1 selected >1</option>
             <option value= 2 > 2 </option>
@@ -24,7 +24,7 @@
             <option value= 9 > 9 </option>
             <option value= 10 > 10 </option>
         </select>
-        <label for = "speed">Chunks per minute<label>
+        <label for = "speed">Chunks per minute</label>
         <select id = "speed">
             <option value= 60 selected >60</option>
             <option value= 70 > 70 </option>
