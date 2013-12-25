@@ -7,26 +7,19 @@ class readings_controller extends base_controller {
         parent::__construct();
 
         # Make sure user is logged in if they want to use anything in this controller
-        // if(!$this->user) {
-        //     die("Members only. <a href='/users/login'>Login</a>");
-        // }
+        if(!$this->user) {
+            Router::redirect("/users/login");
+        }
     }
 
     public function add() {
 
-        if(!$this->user) {
-            Router::redirect("/users/login");
-        }
+        # Setup view
+        $this->template->content = View::instance('v_readings_add');
+        $this->template->title   = "New Reading";
 
-        else{
-
-            # Setup view
-            $this->template->content = View::instance('v_readings_add');
-            $this->template->title   = "New Reading";
-
-            # Render template
-            echo $this->template;
-        }
+        # Render template
+        echo $this->template;
 
     }
 
@@ -61,9 +54,8 @@ class readings_controller extends base_controller {
 
     public function r_read(){
 
-        
-        $read_array = explode(" ", $text);
-        echo $read_array;
+        $to_read = .$content;
+
 
     }
 }

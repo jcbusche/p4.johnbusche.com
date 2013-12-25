@@ -49,7 +49,7 @@
             <option value= 260 > 260 </option>
         </select>
             
-        <input type = 'button' id = 'display-btn' value = 'READ!'>
+        <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!'>
     </form>
         
             
@@ -58,4 +58,4 @@
 <div id = 'display'>Your text will appear here.</div>
 
 	
-<script src = "js/quickread.js"></script>
+<script src = "js/read.js"></script>

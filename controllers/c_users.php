@@ -157,56 +157,37 @@ class users_controller extends base_controller {
         if(!$this->user) {
         Router::redirect('/users/login');
         }
-        // if($user_name == NULL) {
-        //     echo "No user specified";
-        // }
-        // else {
-        //     echo "This is the profile for ".$user_name;
-        // }
-        // # Create a new View instance
-        // # Do *not* include .php with the view name
-        // $view = View::instance('v_users_profile');
-
-        // # Pass information to the view instance
-        // $view->user_name = $user_name;
-
-        // # Render View
-        // echo $view;
-        /*
-        If you look at _v_template you'll see it prints a $content variable in the <body>
-        Knowing that, let's pass our v_users_profile.php view fragment to $content so 
-        it's printed in the <body>
-        */
+        
         else{
-        $this->template->content = View::instance('v_users_profile');
+            $this->template->content = View::instance('v_users_profile');
 
-        # $title is another variable used in _v_template to set the <title> of the page
-        $this->template->title = "Profile of".$this->user->first_name;
+            # $title is another variable used in _v_template to set the <title> of the page
+            $this->template->title = "Profile of".$this->user->first_name;
 
-        #Display all of this user's posts
-        # Build the query
-        $q = 'SELECT
-                posts .* , 
-                users.first_name, 
-                users.last_name
-            FROM posts
-            INNER JOIN users
-                ON posts.user_id = users.user_id
-            WHERE posts.user_id = '.$this->user->user_id;
+            #Display all of this user's posts
+            # Build the query
+            $q = 'SELECT
+                    posts .* , 
+                    users.first_name, 
+                    users.last_name
+                FROM posts
+                INNER JOIN users
+                    ON posts.user_id = users.user_id
+                WHERE posts.user_id = '.$this->user->user_id;
 
-        # Run the query, store the results in the variable $posts
-        $posts = DB::instance(DB_NAME)->select_rows($q);
+            # Run the query, store the results in the variable $posts
+            $posts = DB::instance(DB_NAME)->select_rows($q);
 
-        # Pass data to the View
-        $this->template->content->posts = $posts;
+            # Pass data to the View
+            $this->template->content->posts = $posts;
 
-        # Pass information to the view fragment
-        //$this->template->content->user_name = $user_name;
+            # Pass information to the view fragment
+            //$this->template->content->user_name = $user_name;
 
-        # Render View
-        echo $this->template;
+            # Render View
+            echo $this->template;
         }
 
     }
 
-} # end of the class
+} # end of the classi

@@ -55,7 +55,7 @@
 			            <option value= 260 > 260 </option>
 			        </select>
 			            
-			        <input type = 'button' id = 'display-btn' value = 'READ!'>
+			        <input type = 'button' class = 'display-btn' id = 'saved' value = 'READ!'>
 				    <br><br>
 				</form>
 				    <form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
@@ -70,7 +70,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script> src = "js/call.js"</script>
+	<script> src = "js/read.js"</script>
 
 
 <?php else: ?>
