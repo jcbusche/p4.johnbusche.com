@@ -17,7 +17,7 @@
 		        <?=Time::display($post['created'])?>
 		    </time>
 		    <form action="/readings/r_read/<?=$post['post_id'?>" method="post">
-		    	<label for = "chunksize">Words per chunk<label>
+		    	<label for = "chunksize">Words per chunk</label>
 		        <select id = "chunksize">
 		            <option value= 1 selected >1</option>
 		            <option value= 2 > 2 </option>
@@ -30,7 +30,7 @@
 		            <option value= 9 > 9 </option>
 		            <option value= 10 > 10 </option>
 		        </select>
-		        <label for = "speed">Chunks per minute<label>
+		        <label for = "speed">Chunks per minute</label>
 		        <select id = "speed">
 		            <option value= 60 selected >60</option>
 		            <option value= 70 > 70 </option>
@@ -56,9 +56,10 @@
 		        </select>
 		            
 		        <input type = 'button' id = 'display-btn' value = 'READ!'>
-		    <br><br>
-		    <form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
-				<input type="submit" name="delete" value="Delete"/>
+			    <br><br>
+			    <form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
+					<input type="submit" name="delete" value="Delete"/>
+				</form>
 			</form>
 
 		</article>

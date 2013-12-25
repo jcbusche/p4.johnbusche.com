@@ -58,4 +58,4 @@
 <div id = 'display'>Your text will appear here.</div>
 
 	
-<script src = "js/main.js"></script>
+<script src = "js/quickread.js"></script>
