@@ -50,6 +50,7 @@
         </select>
             
         <input type = 'button' id = 'display-btn' value = 'READ!'>
+    </form>
         
             
 </div>
