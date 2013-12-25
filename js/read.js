@@ -14,21 +14,19 @@ $('.display-btn').click(function(){
 
     else if (buttonType == 'saved'){
 
-        var words = <?=$post['content']?>;
-        console.log(words);
-        // $.ajax({
-        //     type: 'POST',
-        //     url: 'readings/read',
+        $.ajax({
+            type: 'POST',
+            url: 'readings/read',
 
-        //     success: function(response) {
+            success: function(response) {
 
-        //         words: response,
-        //     },
+                var words = response;
+            },
 
-        //     data: {
+            data: {
 
-        //     }
-        // });
+            }
+        });
     }
 
     var numwords = words.length;
