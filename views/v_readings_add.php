@@ -13,9 +13,9 @@
 
 	<div>
 
-		Article Title: <input type="text" name = 'title' id = 'title'>
-    	<label for='content'>Place article text here:</label><br>
-    	<textarea name='content' id='content'></textarea>
+		Article Title: <input type="text" name = 'title'><br>
+    	Place article text here:<br>
+    	<textarea name='content'></textarea>
 
     	<br><br>
     	<input type='submit' value='Save'>
