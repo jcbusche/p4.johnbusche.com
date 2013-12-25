@@ -13,9 +13,8 @@
 
 			    <p><?=$post['title']?></p>
 
-			    <script>
+			    <script src = "../js/read.js">
 			    	var words = '<?=$post["content"]?>';
-			    	console.log(words);
 			    </script>
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
@@ -75,7 +74,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script src = "../js/read.js"></script>
+	
 
 
 <?php else: ?>

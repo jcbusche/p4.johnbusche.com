@@ -13,7 +13,6 @@ $('.display-btn').click(function(){
     }
 
     else if (buttonType == 'saved'){
-        
 
         
 
