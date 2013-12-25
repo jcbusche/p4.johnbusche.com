@@ -14,7 +14,7 @@ If you want a different default time format for this app, set it below
 */
 
 # What is the name of this app?
-	define('APP_NAME', 'Overheard');  
+	define('APP_NAME', 'Reader');  
 
 # When email is sent out from the server, where should it come from?
 # Ideally, this should match the domain name
@@ -32,7 +32,7 @@ A email designated to receive messages from the server. Examples:
 
 
 # Default DB name for this app
-	define('DB_NAME', 'johnbusc_p2_johnbusche_com'); 
+	define('DB_NAME', 'johnbusc_p4_johnbusche_com'); 
 
 # Timezone
 	define('TIMEZONE', 'America/New_York');
@@ -44,5 +44,5 @@ A email designated to receive messages from the server. Examples:
 	//define('SMTP_PASSWORD', '');
 
 # For extra security, you might want to set different salts than what the core uses
-	define('PASSWORD_SALT', 'W)WDjk!mC(m8!K4-Pzedab1iFO%WfRfuDh89T^Sr');
-	define('TOKEN_SALT', 'fcSckpoWY)DKtSz%b#I-rChVeC1%(eSmNJ_6YzmS');
+	define('PASSWORD_SALT', '945H%nXBY3Q@rFT*4FAH89S*$h@QRRE3xCmrEkjS');
+	define('TOKEN_SALT', '^$dAt)_RDTYaB*3C$$)j1&(f4Ch6HXycGMoLA)8c');
