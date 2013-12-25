@@ -10,7 +10,21 @@ $('.display-btn').click(function(){
     }
 
     else if ('#saved'){
-        var words = $('<?=$post['content']?>').split(' ');
+
+        $('#display').text('test');
+        $.ajax({
+            type: 'POST',
+            url: 'readings/read',
+
+            success: function(response) {
+
+                words: response,
+            },
+
+            data: {
+
+            }
+        });
     }
     var numwords = words.length;
     
