@@ -1,0 +1,66 @@
+#logo {
+    font-size: 3em;
+    color: #4C4C4C;
+    /*font-family: 'Lily Script One', cursive;*/
+    font-family: sans-serif;
+    margin: 0em;
+    margin-top: 0em;
+    text-align: left;
+    /*text-decoration:underline;*/
+}
+
+#menu {
+    background-color: #EBEBEB;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+    overflow: hidden;
+}
+
+#menu a {
+    margin: .3em;
+    text-decoration: none;
+  	font-family: sans-serif;
+    color: #4C4C4C;
+    /*font-family: Impact, Charcoal, sans-serif;*/
+
+}
+
+#menu ul {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+    position: relative;
+    float: left;
+    display: block;
+
+}
+
+#menu ul li {
+    list-style: none;
+    float: left;
+    display: block;
+    position:relative;
+    border-right: #4C4C4C solid 1px;
+   
+}
+
+#menu ul li:last-child {
+    border-right: none;
+}
+
+/* CONTENTS */
+
+body {
+    /*max-width: 600px;*/
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    margin-right: 4em;
+    margin-left: 50px;
+    margin-top: 20px;
+
+
+}
+article {
+    background-color: #EBEBEB;
+}
