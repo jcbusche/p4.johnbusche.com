@@ -14,7 +14,7 @@
 			    <p><?=$post['title']?></p>
 
 			    <script>
-			    	var toread = new String('<?php echo $post["content"] ;?>');
+			    	var toread = '<?php echo $post["content"] ;?>';
 			    	console.log(toread);
 
 			    </script>			   
