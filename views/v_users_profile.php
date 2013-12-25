@@ -1,7 +1,7 @@
 <?php if($user): ?>
-	<div id = 'title' class = "header">
+	
     	<h2>Welcome to your profile, <?=$user->first_name?>.  Here you can view and delete your readings.</h2>
-    </div>
+    
 
     <div id = 'articles' class = "input">
 
