@@ -14,7 +14,7 @@ $('.display-btn').click(function(){
 
     else if (buttonType == 'saved'){
 
-        var words = <?php echo  $post['content']; ?>;
+        var words = $(<?php echo  $post['content']; ?>);
 
         words = words.split(' ');
 
