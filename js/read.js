@@ -12,19 +12,19 @@ $('.display-btn').click(function(){
     else if ('#saved'){
 
         $('#display').text('test');
-        $.ajax({
-            type: 'POST',
-            url: 'readings/read',
+        // $.ajax({
+        //     type: 'POST',
+        //     url: 'readings/read',
 
-            success: function(response) {
+        //     success: function(response) {
 
-                words: response,
-            },
+        //         words: response,
+        //     },
 
-            data: {
+        //     data: {
 
-            }
-        });
+        //     }
+        // });
     }
  
     var numwords = words.length;
