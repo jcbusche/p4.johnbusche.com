@@ -154,13 +154,11 @@ class users_controller extends base_controller {
 
     public function profile() {
 
-        echo 'Test';
-
         if(!$this->user) {
-        Router::redirect('/users/login');
+        Router::redirect("/users/login");
         }
         else{
-        $this->template->content = View::instance('v_users_profile');
+        $this->template->content = View::instance("v_users_profile");
 
         $this->template->title = "Profile of".$this->user->first_name;
 

@@ -65,8 +65,3 @@
 		</article>
 
 	<?php endforeach; ?>
-
-
-<?php else: ?>
-    <h1>No user specified</h1>
-<?php endif; ?>
