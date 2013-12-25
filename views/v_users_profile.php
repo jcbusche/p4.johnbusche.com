@@ -14,7 +14,7 @@
 			    <p><?=$post['title']?></p>
 
 			    <script>
-			    	var to_read = $post['title'];
+			    	var to_read = <? php echo $post['title']; ?>;
 			    	console.log(to_read);
 
 			    </script>			   
@@ -76,13 +76,6 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script>
-		$('#saved').click(function(){
-			var read = <$=post["content"]?>;
-			console.log(read);
-		});
-
-	</script>
 
 
 <?php else: ?>
