@@ -74,7 +74,7 @@
 
 	<script>
 		$('#saved').click(function(){
-			var read = '<$=post["content"]?>'
+			var read = <$=post["content"]?>;
 			console.log(read);
 		});
 
