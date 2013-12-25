@@ -16,7 +16,7 @@ $('.display-btn').click(function(){
 
         $.ajax({
             type: 'POST',
-            url: '../readings/read',
+            url: '../readings/r_read',
 
             success: function(response) {
 
