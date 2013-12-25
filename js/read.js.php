@@ -16,6 +16,8 @@ $('.display-btn').click(function(){
 
     else if (buttonType == 'saved'){
 
+        var words = '<?=$post["content"]?>';
+
         words = words.split(' ');
     }
 
