@@ -15,16 +15,7 @@ $('.display-btn').click(function(){
     else if (buttonType == 'saved'){
         
 
-        $.ajax({
-            type: 'POST',
-            url: '../readings/r_read',
-
-            success: function(response) {
-
-                var words = response;
-            },
-
-        });
+        
 
         words = words.split(' ');
     }
