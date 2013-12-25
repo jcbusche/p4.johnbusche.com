@@ -2,14 +2,15 @@ displayLoop = 0
 
 $('.display-btn').click(function(){
     stopLoop();
+    var buttonType = this.id;
     //Ensure that the loop won't nest and force speed;
     clearInterval(displayLoop);
-    if ('#quick'){
+    if (buttonType = '#quick'){
         //Pull in text from text area and break it down into an array of words
         var words = $("#toread").val().split(' ');
     }
 
-    else if ('#saved'){
+    else if (buttonType = '#saved'){
 
         var words = "test";
         // $.ajax({
