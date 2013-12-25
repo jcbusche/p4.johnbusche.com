@@ -7,19 +7,18 @@
 
 <?php else: ?>
 
-<form method='POST' action='/readings/r_add'>
+<div>
 
+	<form method='POST' action='/readings/r_add'>
 
+			Article Title: <br>
+			<input type="text" name = 'title'><br>
+	    	Place article text here:<br>
+	    	<textarea name='content'></textarea>
 
-	<div>
-
-		Article Title: <input type="text" name = 'title'><br>
-    	Place article text here:<br>
-    	<textarea name='content'></textarea>
-
-    	<br><br>
-    	<input type='submit' value='Save'>
-	</div>
-</form> 
+	    	<br><br>
+	    	<input type='submit' value='Save'>
+	</form> 
+</div>
 
 <?php endif; ?>
