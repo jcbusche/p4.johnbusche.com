@@ -13,14 +13,7 @@
 
 			    <p><?=$post['title']?></p>
 
-			    <script>
-			    	var toread = '<?php echo $post["content"] ;?>';
-			    	console.log(toread);
-			    	$('#display-btn').click(function(){
-			    		console.log(toread);
-			    	});
-
-			    </script>			   
+			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
@@ -78,6 +71,14 @@
 	</div>
 
 	<div id = 'display'>Your text will appear here.</div>
+
+	<script>
+		$('#display-btn').click(function(){
+			var toread = '<?php echo $post["content"] ;?>';
+			console.log(toread);
+		});
+
+	</script>
 
 
 <?php else: ?>
