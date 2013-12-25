@@ -74,7 +74,12 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script src = "../js/read.js.php"></script>
+	<script>
+		$('#saved').click(function(){
+			console.log('<$=post["content"]?>');
+		});
+
+	</script>
 
 
 <?php else: ?>

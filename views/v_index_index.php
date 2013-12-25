@@ -58,4 +58,4 @@
 <div id = 'display'>Your text will appear here.</div>
 
 	
-<script src = "js/read.js.php"></script>
+<script src = "js/read.js"></script>
