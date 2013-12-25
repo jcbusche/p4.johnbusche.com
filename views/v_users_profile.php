@@ -68,6 +68,10 @@
 
 	</div>
 
+	<div id = 'display'>Your text will appear here.</div>
+
+	<script> src = "js/call.js"</script>
+
 
 <?php else: ?>
     <h1>No user specified</h1>
