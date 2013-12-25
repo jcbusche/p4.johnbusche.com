@@ -10,7 +10,7 @@ $('.display-btn').click(function(){
     }
 
     else if ('#saved'){
-        var words = $(<?=$post['content']?>).split(' ');
+        var words = $('<?=$post['content']?>').split(' ');
     }
     var numwords = words.length;
     
