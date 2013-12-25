@@ -4,6 +4,7 @@ $('.display-btn').click(function(){
     stopLoop();
     var buttonType = this.id;
     console.log(buttonType);
+    console.log(words);
     //Ensure that the loop won't nest and force speed;
     clearInterval(displayLoop);
     if (buttonType == 'quick'){
@@ -14,7 +15,7 @@ $('.display-btn').click(function(){
 
     else if (buttonType == 'saved'){
 
-        
+
 
         words = words.split(' ');
     }
