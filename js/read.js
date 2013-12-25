@@ -14,19 +14,23 @@ $('.display-btn').click(function(){
 
     else if (buttonType == 'saved'){
 
-        $.ajax({
-            type: 'POST',
-            url: '../readings/r_read',
+        var words = "<?php echo  $post['content']; ?>";
 
-            success: function(response) {
+        words = words.split(' ');
 
-                var words = response;
-            },
+        // $.ajax({
+        //     type: 'POST',
+        //     url: '../readings/r_read',
 
-            data: {
+        //     success: function(response) {
 
-            }
-        });
+        //         var words = response;
+        //     },
+
+        //     data: {
+
+        //     }
+        // });
     }
 
     var numwords = words.length;
