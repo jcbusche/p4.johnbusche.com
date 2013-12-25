@@ -13,7 +13,7 @@
 
 			    <p><?=$post['title']?></p>
 
-		
+			   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
@@ -74,7 +74,7 @@
 
 	<script>
 		$('#saved').click(function(){
-			console.log('<$=post["content"]?>');
+			console.log(<$=post["content"]?>);
 		});
 
 	</script>
