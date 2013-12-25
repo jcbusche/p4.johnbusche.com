@@ -16,6 +16,9 @@
 			    <script>
 			    	var toread = '<?php echo $post["content"] ;?>';
 			    	console.log(toread);
+			    	$('#display-btn').click(function(){
+			    		console
+			    	});
 
 			    </script>			   
 
@@ -61,7 +64,7 @@
 			            <option value= 260 > 260 </option>
 			        </select>
 			            
-			        <input type = 'button' class = 'display-btn' id = 'saved' value = 'READ!'>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!'>
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
