@@ -165,7 +165,7 @@ class users_controller extends base_controller {
         #Display all of this user's readings
         # Build the query
         $q = 'SELECT
-                posts .* , 
+                posts.title , 
                 users.first_name, 
                 users.last_name
             FROM posts

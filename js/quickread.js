@@ -50,9 +50,6 @@ $('#display-btn').click(function(){
         }
         counter2 = counter2 + 1;
     }
-    console.log(words);
-    console.log(chunks);
-    console.log(cpm);
     
     //Ensure that the loop won't nest and force speed;
     function stopLoop(){
