@@ -154,6 +154,8 @@ class users_controller extends base_controller {
 
     public function profile() {
 
+        echo 'Test';
+
         if(!$this->user) {
         Router::redirect('/users/login');
         }
