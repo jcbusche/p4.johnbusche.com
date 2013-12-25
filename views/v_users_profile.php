@@ -17,7 +17,7 @@
 			    	var toread = '<?php echo $post["content"] ;?>';
 			    	console.log(toread);
 			    	$('#display-btn').click(function(){
-			    		console
+			    		console.log(toread);
 			    	});
 
 			    </script>			   
