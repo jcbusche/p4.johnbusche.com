@@ -6,13 +6,13 @@ $('.display-btn').click(function(){
     console.log(buttonType);
     //Ensure that the loop won't nest and force speed;
     clearInterval(displayLoop);
-    if (buttonType = 'quick'){
+    if (buttonType == 'quick'){
         console.log(buttonType);
         //Pull in text from text area and break it down into an array of words
         var words = $('toread').val().split(' ');
     }
 
-    else if (buttonType = 'saved'){
+    else if (buttonType == 'saved'){
 
         var words = "test";
         // $.ajax({
