@@ -16,7 +16,7 @@ $('.display-btn').click(function(){
 
         $.ajax({
             type: 'POST',
-            url: '../readings/r_read',
+            url: 'p4.johnbusche.com/readings/r_read',
 
             success: function(response) {
 
