@@ -14,7 +14,8 @@ $('.display-btn').click(function(){
 
     else if (buttonType == 'saved'){
 
-        var words = "test";
+        var words = <?=$post['content']?>;
+        console.log(words);
         // $.ajax({
         //     type: 'POST',
         //     url: 'readings/read',
