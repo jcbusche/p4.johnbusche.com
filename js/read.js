@@ -11,7 +11,7 @@ $('.display-btn').click(function(){
 
     else if ('#saved'){
 
-        $('#display').text('test');
+        var words = "test";
         // $.ajax({
         //     type: 'POST',
         //     url: 'readings/read',
@@ -26,7 +26,7 @@ $('.display-btn').click(function(){
         //     }
         // });
     }
- 
+
     var numwords = words.length;
     
     //Pull in chunksize from selector; Cast value to avoid errors
