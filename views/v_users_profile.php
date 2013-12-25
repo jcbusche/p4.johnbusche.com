@@ -13,6 +13,11 @@
 
 			    <p><?=$post['title']?></p>
 
+			    <script>
+			    	var words = '<?=$post["content"]?>';
+			    	console.log(words);
+			    </script>
+
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
 			    </time>
