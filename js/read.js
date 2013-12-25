@@ -4,28 +4,29 @@ $('.display-btn').click(function(){
     stopLoop();
     //Ensure that the loop won't nest and force speed;
     clearInterval(displayLoop);
-    if ('#quick'){
-        //Pull in text from text area and break it down into an array of words
-        var words = $("#toread").val().split(' ');
-    }
+    // if ('#quick'){
+    //     //Pull in text from text area and break it down into an array of words
+    //     var words = $("#toread").val().split(' ');
+    // }
 
-    else if ('#saved'){
+    // else if ('#saved'){
 
-        $('#display').text('test');
-        $.ajax({
-            type: 'POST',
-            url: 'readings/read',
+    //     $('#display').text('test');
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: 'readings/read',
 
-            success: function(response) {
+    //         success: function(response) {
 
-                words: response,
-            },
+    //             words: response,
+    //         },
 
-            data: {
+    //         data: {
 
-            }
-        });
-    }
+    //         }
+    //     });
+    // }
+    var words = $("#toread").val().split(' ');
     var numwords = words.length;
     
     //Pull in chunksize from selector; Cast value to avoid errors
