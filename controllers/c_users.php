@@ -155,14 +155,35 @@ class users_controller extends base_controller {
     public function profile() {
 
         if(!$this->user) {
-        Router::redirect("/users/login");
+        Router::redirect('/users/login');
         }
-        else{
-        $this->template->content = View::instance("v_users_profile");
+        // if($user_name == NULL) {
+        //     echo "No user specified";
+        // }
+        // else {
+        //     echo "This is the profile for ".$user_name;
+        // }
+        // # Create a new View instance
+        // # Do *not* include .php with the view name
+        // $view = View::instance('v_users_profile');
 
+        // # Pass information to the view instance
+        // $view->user_name = $user_name;
+
+        // # Render View
+        // echo $view;
+        /*
+        If you look at _v_template you'll see it prints a $content variable in the <body>
+        Knowing that, let's pass our v_users_profile.php view fragment to $content so 
+        it's printed in the <body>
+        */
+        else{
+        $this->template->content = View::instance('v_users_profile');
+
+        # $title is another variable used in _v_template to set the <title> of the page
         $this->template->title = "Profile of".$this->user->first_name;
 
-        #Display all of this user's readings
+        #Display all of this user's posts
         # Build the query
         $q = 'SELECT
                 posts .* , 
