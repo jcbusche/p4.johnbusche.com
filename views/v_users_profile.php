@@ -51,7 +51,6 @@
 		
 		<?php $temp = $post['content'];
 			  $toread = explode( " ", $temp);
-			  echo $toread;
 		?>
 
 			<article>
@@ -63,7 +62,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader($toread)'/>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader(<?php echo $toread?>)'/>
 			        <br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
