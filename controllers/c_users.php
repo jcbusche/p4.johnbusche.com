@@ -46,6 +46,8 @@ class users_controller extends base_controller {
 
         else if(empty($fname) || empty($lname) || empty($email) || empty($password)){
             echo 'Your form data is invalid, please try again.';
+            sleep(1);
+            Router::redirect("/users/signup");
         }
 
         else{

@@ -25,19 +25,32 @@ class readings_controller extends base_controller {
 
     public function r_add() {
 
-        # Associate this post with this user
-        $_POST['user_id']  = $this->user->user_id;
+        # Check to see if user has filled in required fields
+        $title = $_POST['title'];
+        $content = $_POST['content'];
 
-        # Unix timestamp of when this post was created / modified
-        $_POST['created']  = Time::now();
-        $_POST['modified'] = Time::now();
+        if(empty($title) || empty($content) || $content == 'Place the text for your article here'){
+            echo "Please fill in both fields";
+            sleep(1);
+            Router::redirect("/readings/add");
+        }
 
-        # Insert
-        # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
-        DB::instance(DB_NAME)->insert('posts', $_POST);
 
-        #Redirect to user's profile/list of posts
-        Router::redirect("/users/profile");
+        else{
+            # Associate this post with this user
+            $_POST['user_id']  = $this->user->user_id;
+
+            # Unix timestamp of when this post was created / modified
+            $_POST['created']  = Time::now();
+            $_POST['modified'] = Time::now();
+
+            # Insert
+            # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
+            DB::instance(DB_NAME)->insert('posts', $_POST);
+
+            #Redirect to user's profile/list of posts
+            Router::redirect("/users/profile");
+        }
 
     }
 

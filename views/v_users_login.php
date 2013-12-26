@@ -4,7 +4,7 @@
 		<form method='POST' action='/users/p_login'>
 
 		    Email<br>
-		    <input type='text' name='email'>
+		    <input type='email' name='email' required placeholder = 'You must enter a valid email address'>
 
 		    <br><br>
 
