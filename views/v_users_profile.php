@@ -49,13 +49,15 @@
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
 		
-		<?php $temp = $post['content'];
-			  $toread = str_replace('"', '\"', $temp);
-			  $toread = str_replace("'", "&#39;", $toread);
-			  //$toread = explode( " ", $temp);
-		?>
+		
 
 			<article>
+
+				<?php $temp = $post['content'];
+					  $toread = str_replace('"', '\"', $temp);
+					  $toread = str_replace("'", "&#39;", $toread);
+					  //$toread = explode( " ", $temp);
+				?>
 
 			    <p><?=$post['title']?></p> 			  		   
 
