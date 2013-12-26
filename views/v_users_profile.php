@@ -49,6 +49,7 @@
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
 		
+		<?php $toread = $post['content'];?>
 
 			<article>
 
@@ -59,7 +60,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader()'/>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader($toread)'/>
 			        <br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
