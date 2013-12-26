@@ -51,7 +51,7 @@
 		
 		<?php $temp = $post['content'];
 			  $toread = str_replace('"', '\"', $temp);
-			  $toread = str_replace("'", "\'", $toread);
+			  $toread = str_replace("'", "", $toread);
 			  //$toread = explode( " ", $temp);
 		?>
 
