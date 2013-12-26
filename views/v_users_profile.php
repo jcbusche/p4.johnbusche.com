@@ -5,22 +5,9 @@
 
     <div id = 'articles' class = "input">
 
-	    <?php $posts_reverse = array_reverse($posts); ?>
-	    <?php foreach($posts_reverse as $post):?> 
-		
-
-			<article>
-
-			    <p><?=$post['title']?></p>
-
-			  		   
-
-			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
-			        <?=Time::display($post['created'])?>
-			    </time>
-			    <form>
-			    	<label for = "chunksize">Words per chunk</label>
-			        <select id = "chunksize">
+    	<form>
+    		<label for = "chunksize">Words per chunk</label>
+			<select id = "chunksize">
 			            <option value= 1 selected >1</option>
 			            <option value= 2 > 2 </option>
 			            <option value= 3 > 3 </option>
@@ -31,9 +18,9 @@
 			            <option value= 8 > 8 </option>
 			            <option value= 9 > 9 </option>
 			            <option value= 10 > 10 </option>
-			        </select>
-			        <label for = "speed">Chunks per minute</label>
-			        <select id = "speed">
+			</select>
+			<label for = "speed">Chunks per minute</label>
+			<select id = "speed">
 			            <option value= 60 selected >60</option>
 			            <option value= 70 > 70 </option>
 			            <option value= 80 > 80 </option>
@@ -55,8 +42,25 @@
 			            <option value= 240 > 240 </option>
 			            <option value= 250 > 250 </option>
 			            <option value= 260 > 260 </option>
-			        </select>
-			            
+			</select>
+		</form>
+
+
+	    <?php $posts_reverse = array_reverse($posts); ?>
+	    <?php foreach($posts_reverse as $post):?> 
+		
+
+			<article>
+
+			    <p><?=$post['title']?></p>
+
+			  		   
+
+			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
+			        <?=Time::display($post['created'])?>
+			    </time>
+			    <form>
+			    				            
 			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader('<?php echo $post["content"] ;?>')">
 				    <br><br>
 				</form>
