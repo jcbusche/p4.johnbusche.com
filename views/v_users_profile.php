@@ -50,7 +50,10 @@
 	    <?php foreach($posts_reverse as $post):?> 
 		
 		<?php $temp = $post['content'];
+			  echo $temp;
+			  $temp = (string)$temp;
 			  $toread = explode( " ", $temp);
+			  echo $toread;
 		?>
 
 			<article>
