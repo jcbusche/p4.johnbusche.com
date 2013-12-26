@@ -49,7 +49,7 @@
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
 		
-		<?php $temp = PDO($post['content']);
+		<?php $temp = $post['content'];
 			  $temp = (string)$temp;
 			  $toread = explode( " ", $temp);
 		?>
