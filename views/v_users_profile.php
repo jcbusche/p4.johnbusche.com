@@ -64,7 +64,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'console.log("<?php echo $toread;?>")'/>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'console.log("<?php echo json_encode($toread)?>")'/>
 			        <br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
