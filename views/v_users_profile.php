@@ -63,7 +63,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader(words)">
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader($('<?php echo $post['content'];?>').split(" "))">
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
