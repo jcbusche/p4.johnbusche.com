@@ -57,7 +57,7 @@
 			            <option value= 260 > 260 </option>
 			        </select>
 			            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader('<?php echo $post["content"] ;?>')">
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader('<?php echo $post["content"] ;?>', parseInt($("#chunksize").val()), parseInt($("#speed").val()))">
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
@@ -74,7 +74,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script src = "../../js/read.js"></script>
+	<script src = "js/read.js"></script>
 
 	
 
