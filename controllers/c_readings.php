@@ -52,10 +52,5 @@ class readings_controller extends base_controller {
 
     }
 
-    public function r_read($text){
-
-        
-
-
-    }
+    
 }
