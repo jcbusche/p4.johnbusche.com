@@ -1,12 +1,12 @@
 displayLoop = 0
 
-function reader(){
+function reader(toread){
     stopLoop();
     //Ensure that the loop won't nest and force speed;
     clearInterval(displayLoop);
     
     //Pull in text from text area and break it down into an array of words
-    var words = $(<?=post['content']?>).split(" ");
+    var words = toread.split(" ");
 
     var numwords = words.length;
     
