@@ -4,12 +4,12 @@
 		<form method='POST' action='/users/p_login'>
 
 		    Email<br>
-		    <input type='email' name='email' required placeholder = 'You must enter a valid email address'>
+		    <input type='email' name='email' required placeholder = 'Email'>
 
 		    <br><br>
 
 		    Password<br>
-		    <input type='password' name='password'>
+		    <input type='password' name='password' required placeholder = "Password">
 
 		    <br><br>
 

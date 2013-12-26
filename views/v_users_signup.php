@@ -1,19 +1,19 @@
 <form method='POST' action='/users/p_signup'>
 
     First Name<br>
-    <input type='text' name='first_name' required placeholder = "Enter your first name">
+    <input type='text' name='first_name' required >
     <br><br>
 
     Last Name<br>
-    <input type='text' name='last_name' required placeholder = "Enter your last name">
+    <input type='text' name='last_name' required >
     <br><br>
 
     Email<br>
-    <input type='email' name='email' required placehold = "You must enter a valid email address">
+    <input type='email' name='email' required >
     <br><br>
 
     Password<br>
-    <input type='password' name='password' required = "You must enter a password">
+    <input type='password' name='password' required >
     <br><br>
 
     <input type='submit' value='Sign up'>

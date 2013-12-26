@@ -49,7 +49,7 @@
             <option value= 260 > 260 </option>
         </select>
             
-        <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!' onClick = 'reader($("#toread").val().split(" "))' required placeholder = "You must enter text before you can read">
+        <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!' onClick = 'reader($("#toread").val().split(" "))' required placeholder = "Place the text for your article here.">
     </form>
         
             

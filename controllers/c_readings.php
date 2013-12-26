@@ -29,7 +29,7 @@ class readings_controller extends base_controller {
         $title = $_POST['title'];
         $content = $_POST['content'];
 
-        if(empty($title) || empty($content) || $content == 'Place the text for your article here'){
+        if(empty($title) || empty($content) ){
             echo "Please fill in both fields";
             sleep(1);
             Router::redirect("/readings/add");
