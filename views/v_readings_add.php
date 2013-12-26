@@ -12,7 +12,7 @@
 	<form method='POST' action='/readings/r_add'>
 
 			Article Title: <br>
-			<input type="text" name = 'title'><br>
+			<input type="text" name = 'title' rows = "10" cols = "50"><br>
 	    	Place article text here:<br>
 	    	<textarea name='content'></textarea>
 
