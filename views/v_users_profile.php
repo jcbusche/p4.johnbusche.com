@@ -55,7 +55,7 @@
 			    <p><?=$post['title']?></p>
 
 			    <script>
-			    	var words = String(<?php echo $post['content']?>);
+			    	var words = new String("<?php echo $post['content']?>");
 			    </script>			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
