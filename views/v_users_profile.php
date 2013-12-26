@@ -57,20 +57,14 @@
 			            <option value= 260 > 260 </option>
 			        </select>
 			            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!'>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader()">
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
 						<input type="submit" name="delete" value="Delete"/>
 				</form>
 
-				<script>
-					$('#display-btn').click(function(){
-						var toread = '<?php echo $post["content"] ;?>';
-						console.log(toread);
-					});
-
-				</script>
+				
 
 			</article>
 
@@ -79,6 +73,14 @@
 	</div>
 
 	<div id = 'display'>Your text will appear here.</div>
+
+	<script>
+		function reader(){
+			var toread = '<?php echo $post["content"] ;?>';
+			console.log(toread);
+		};
+
+	</script>
 
 	
 
