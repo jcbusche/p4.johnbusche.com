@@ -49,19 +49,6 @@
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
 
-	 //    <script>
-	 //    	function pass(){
-		
-		// 		<?php $temp = $post['content'];
-		// 			  $toread = str_replace('"', '\"', $temp);
-		// 			  $toread = str_replace("'", "&#39;", $toread);
-		// 			  //$toread = explode( " ", $temp);
-		// 		?>;
-		// 		reader(<?php echo $toread?>);
-		// 	};
-		// </script>
-
-
 			<article>
 
 
