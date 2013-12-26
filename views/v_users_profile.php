@@ -50,7 +50,8 @@
 	    <?php foreach($posts_reverse as $post):?> 
 		
 		<?php $temp = $post['content'];
-			  $temp = (string)$temp;
+			  $temp = str_replace('"', '\"', $temp);
+			  $temp = str_replace("'", "\'", $temp);
 			  $toread = explode( " ", $temp);
 		?>
 
@@ -63,7 +64,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader(<?php echo $toread?>)'/>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader(<?php echo json_encode($toread)?>)'/>
 			        <br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">

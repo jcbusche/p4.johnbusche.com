@@ -6,7 +6,7 @@ function reader(toread){
     clearInterval(displayLoop);
     
     //Pull in text from text area and break it down into an array of words
-    var words = <?php json_encode(toread)?>;
+    var words = toread;
 
     var numwords = words.length;
     
