@@ -1,6 +1,6 @@
 displayLoop = 0
 
-function reader(toread, chunksize, speed){
+function reader(toread){
     stopLoop();
     //Ensure that the loop won't nest and force speed;
     clearInterval(displayLoop);
@@ -11,10 +11,10 @@ function reader(toread, chunksize, speed){
     var numwords = words.length;
     
     //Pull in chunksize from selector; Cast value to avoid errors
-    //var chunksize = parseInt($("#chunksize").val());
+    var chunksize = parseInt($("#chunksize").val());
     
     //Pull in speed from selector
-    //var cpm = parseInt($("#speed").val());
+    var cpm = parseInt($("#speed").val());
     
     //Counter to keep track of place in chunks array once the text is being displayed
     var counter = 0;
