@@ -50,9 +50,8 @@
 	    <?php foreach($posts_reverse as $post):?> 
 		
 		<?php $temp = $post['content'];
-			  $temp = str_replace('"', '\"', $temp);
-			  $toread = str_replace("'", "\'", $temp);
-			  //$toread = explode( " ", $temp);
+			  $temp = json_encode($temp);
+			  $toread = explode( " ", $temp);
 		?>
 
 			<article>
