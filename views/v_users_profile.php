@@ -64,6 +64,14 @@
 						<input type="submit" name="delete" value="Delete"/>
 				</form>
 
+				<script>
+					$('#display-btn').click(function(){
+						var toread = '<?php echo $post["content"] ;?>';
+						console.log(toread);
+					});
+
+				</script>
+
 			</article>
 
 		<?php endforeach; ?>
@@ -72,13 +80,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script>
-		$('#display-btn').click(function(){
-			var toread = '<?php echo $post["content"] ;?>';
-			console.log(toread);
-		});
-
-	</script>
+	
 
 
 <?php else: ?>
