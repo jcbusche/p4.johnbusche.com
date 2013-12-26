@@ -23,10 +23,10 @@ class users_controller extends base_controller {
 
     public function p_signup() {
 
-        # Dump out the results of POST to see what the form submitted
-        // echo '<pre>';
-        // print_r($_POST);
-        // echo '</pre>';
+        $fname = $_POST["first_name"];
+        $lname = $_POST["last_name"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
 
         #Sanitize
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
@@ -37,39 +37,45 @@ class users_controller extends base_controller {
         #Execute query
         $user_exists = DB::instance(DB_NAME)->select_rows($q);
 
-            #Check for duplicate email
-            if(!empty($user_exists)){
-                #Redirect dup email to login page and pass error
-                Router::redirect("/users/login/user-exists");
-            }
-            else{
 
-                # More data we want stored with the user
-                $_POST['created']  = Time::now();
-                $_POST['modified'] = Time::now(); 
+        #Check for duplicate email
+        if(!empty($user_exists)){
+            #Redirect dup email to login page and pass error
+            Router::redirect("/users/login/user-exists");
+        }
 
-                # Encrypt the password  
-                $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
+        else if(empty($fname) || empty($lname) || empty($email) || empty($password)){
+            echo 'Your form data is invalid, please try again.';
+        }
 
-                # Create an encrypted token via their email address and a random string
-                $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string()); 
+        else{
 
-                # Insert this user into the database
-                $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
+            # More data we want stored with the user
+            $_POST['created']  = Time::now();
+            $_POST['modified'] = Time::now(); 
 
-                $to = $_POST['email'];
-                $subject = "Welcome to Reader";
-                $message = "Congratulations, you've signed up for Reader. You should have been sent to the login page after your registration, but in case you missed it, you can login at p4.johnbusche.com/users/login";
-                $from = 'john@johnbusche.com';
-                $headers = "From:" . $from;        
+            # Encrypt the password  
+            $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
+
+            # Create an encrypted token via their email address and a random string
+            $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string()); 
+
+            # Insert this user into the database
+            $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
+
+            $to = $_POST['email'];
+            $subject = "Welcome to Reader";
+            $message = "Congratulations, you've signed up for Reader. You should have been sent to the login page after your registration, but in case you missed it, you can login at p4.johnbusche.com/users/login";
+            $from = 'john@johnbusche.com';
+            $headers = "From:" . $from;        
             
-                if(!$this->user){
-                    mail($to, $subject, $message, $headers);
-                }
+            if(!$this->user){
+                mail($to, $subject, $message, $headers);
+            }
 
                 #Successful creation
-                Router::redirect("/users/login/");
-            }
+            Router::redirect("/users/login/");
+        }
 
     }
 
