@@ -53,11 +53,6 @@
 			<article>
 
 			    <p><?=$post['title']?></p>
-
-			    <script>
-			    	var text = "<?=$post['content']?>"
-			    </script>
-
 			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
@@ -65,7 +60,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader(text)">
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = "reader(String('<?php echo $post["content"] ;?>')">
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
