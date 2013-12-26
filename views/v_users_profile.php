@@ -57,7 +57,7 @@
 			            <option value= 260 > 260 </option>
 			        </select>
 			            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick="reader()">
+			        <input type = 'button' id = 'display-btn'  value = 'READ!'>
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
@@ -65,7 +65,7 @@
 				</form>
 
 				<script>
-					function reader(){
+					$('#display-btn').click(function(){
 						var toread = '<?php echo $post["content"] ;?>';
 						console.log(toread);
 					});
