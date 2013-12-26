@@ -52,10 +52,9 @@ class readings_controller extends base_controller {
 
     }
 
-    public function r_read(){
+    public function r_read($text){
 
-        $to_read = $post["content"];
-        echo $to_read;
+        
 
 
     }

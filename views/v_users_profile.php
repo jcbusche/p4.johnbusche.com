@@ -74,12 +74,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script>
-		function reader(toread){
-			console.log(toread);
-		};
-
-	</script>
+	<script>src = "../js/read.js"</script>
 
 	
 

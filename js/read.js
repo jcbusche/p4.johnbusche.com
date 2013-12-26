@@ -1,23 +1,13 @@
 displayLoop = 0
 
-$('.display-btn').click(function(){
+function reader(toread){
     stopLoop();
-    var buttonType = this.id;
     console.log(words);
     //Ensure that the loop won't nest and force speed;
     clearInterval(displayLoop);
-    if (buttonType == 'quick'){
-        console.log(buttonType);
-        //Pull in text from text area and break it down into an array of words
-        var words = $('toread').val().split(' ');
-    }
-
-    else if (buttonType == 'saved'){
-
-        console.log(words);
-
-        words = words.split(' ');
-    }
+    
+    //Pull in text from text area and break it down into an array of words
+    var words = toread.split(' ');
 
     var numwords = words.length;
     
