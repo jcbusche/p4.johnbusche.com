@@ -51,6 +51,7 @@
 		
 		<?php $temp = $post['content'];
 			  $toread = explode( " ", $temp);
+			  echo $toread;
 		?>
 
 			<article>
