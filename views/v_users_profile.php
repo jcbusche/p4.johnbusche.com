@@ -52,6 +52,7 @@
 		<?php $temp = $post['content'];
 			  echo $temp;
 			  $temp = (string)$temp;
+			  echo $temp;
 			  $toread = explode( " ", $temp);
 			  echo $toread;
 		?>
