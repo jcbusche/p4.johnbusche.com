@@ -64,5 +64,5 @@ function reader(toread){
         $('#display').text(chunks[counter]);
         counter = counter + 1 ;
      }, 60000/cpm);
-});
+};
         
