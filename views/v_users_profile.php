@@ -48,16 +48,22 @@
 
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
-		
-		
 
-			<article>
-
+	    <script>
+	    	function pass(){
+		
 				<?php $temp = $post['content'];
 					  $toread = str_replace('"', '\"', $temp);
 					  $toread = str_replace("'", "&#39;", $toread);
 					  //$toread = explode( " ", $temp);
-				?>
+				?>;
+				reader(<?php echo $toread?>);
+			};
+		</script>
+
+
+			<article>
+
 
 			    <p><?=$post['title']?></p> 			  		   
 
@@ -66,7 +72,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader("<?php echo $toread?>")'/>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'pass()'/>
 			        <br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
