@@ -54,14 +54,14 @@
 
 			    <p><?=$post['title']?></p>
 
-			    			  		   
+			    $toread = "<?=$post['content']?>";  			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = 'reader($(<?=$post['content']?>).val().split(" "))'>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = 'reader($toread)'>
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
