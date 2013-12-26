@@ -49,17 +49,17 @@
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
 
-	    <script>
-	    	function pass(){
+	 //    <script>
+	 //    	function pass(){
 		
-				<?php $temp = $post['content'];
-					  $toread = str_replace('"', '\"', $temp);
-					  $toread = str_replace("'", "&#39;", $toread);
-					  //$toread = explode( " ", $temp);
-				?>;
-				reader(<?php echo $toread?>);
-			};
-		</script>
+		// 		<?php $temp = $post['content'];
+		// 			  $toread = str_replace('"', '\"', $temp);
+		// 			  $toread = str_replace("'", "&#39;", $toread);
+		// 			  //$toread = explode( " ", $temp);
+		// 		?>;
+		// 		reader(<?php echo $toread?>);
+		// 	};
+		// </script>
 
 
 			<article>
@@ -72,7 +72,7 @@
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'pass()'/>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)'/>
 			        <br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
