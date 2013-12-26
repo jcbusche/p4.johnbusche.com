@@ -52,16 +52,14 @@
 
 			<article>
 
-			    <p><?=$post['title']?></p>
-
-			    $toread = "<?=$post['content']?>";  			  		   
+			    <p><?=$post['title']?></p> 			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
 			    </time>
 			    <form>
 			    				            
-			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = 'reader($toread)'>
+			        <input type = 'button' id = 'display-btn'  value = 'READ!' onClick = 'reader($($post["content"]).split(" ")'>
 				    <br><br>
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
