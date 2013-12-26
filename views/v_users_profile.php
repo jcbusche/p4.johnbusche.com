@@ -50,8 +50,8 @@
 	    <?php foreach($posts_reverse as $post):?> 
 		
 		<?php $temp = $post['content'];
-			  $temp = str_replace('"', '/"', $temp);
-			  //$temp = str_replace("'", "\'", $temp);
+			  $temp = str_replace('"', '', $temp);
+			  $temp = str_replace("'", "", $temp);
 			  $toread = explode( " ", $temp);
 		?>
 
