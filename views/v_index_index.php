@@ -9,7 +9,9 @@
 
 <div id = 'text-input' class = 'input'>
     <form>
-        <textarea id = 'toread'  rows = "10" cols = "50">Place the text for your article here</textarea>
+        <label for = 'toread' id = "stats"></label>
+        <br><br>
+        <textarea id = 'toread'  rows = "10" cols = "50" required placeholder = "Place the text for your article here"></textarea>
         <br><br>
         <label for = "chunksize">Words per chunk</label>
         <select id = "chunksize">
@@ -49,7 +51,7 @@
             <option value= 260 > 260 </option>
         </select>
             
-        <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!' onClick = 'reader($("#toread").val().split(" "))' required placeholder = "Place the text for your article here.">
+        <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!' onClick = 'reader($("#toread").val())'>
     </form>
         
             
@@ -58,4 +60,6 @@
 <div id = 'display'>Your text will appear here.</div>
 
 	
-<script src = "js/read.js"></script>
+<script src = "js/read.js">
+    stats($("#toread").val(), $("chunksize").val(), $("speed").val());
+</script>

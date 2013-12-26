@@ -43,7 +43,7 @@
 			            <option value= 250 > 250 </option>
 			            <option value= 260 > 260 </option>
 			</select>
-			
+
 		</form>
 
 
@@ -53,7 +53,8 @@
 			<article>
 
 
-			    <p><?=$post['title']?></p> 			  		   
+			    <p><?=$post['title']?></p> 
+			    <p id = 'stats'></p>			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
@@ -77,7 +78,9 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script src = "../js/read.js"></script>
+	<script src = "../js/read.js">
+		stats($("#toread").val(), $("chunksize").val(), $("speed").val());
+	</script>
 
 	
 

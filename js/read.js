@@ -64,4 +64,13 @@ function reader(toread){
         counter = counter + 1 ;
      }, 60000/cpm);
 };
+
+function stats(text, chunksize, speed){
+    var words = text.split(" ");
+    var numwords = words.length();
+
+    var time = numwords/(chunksize*speed);
+
+    $('#stats').text(numwords + " words. " + time + " minutes to read.");
+};
         
