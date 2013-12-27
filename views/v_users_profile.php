@@ -1,6 +1,6 @@
 <?php if($user): ?>
 	<div id = 'title' class = "header">
-    	<h2>Welcome to your profile, <?=$user->first_name?>.  Here you can view and delete your readings. Hover over an article title to see how long it is and how long it will take you to read with your current options.</h2>
+    	<p>Welcome to your profile, <?=$user->first_name?>.  Here you can view and delete your readings. Hover over an article title to see how long it is and how long it will take you to read with your current options.</p>
     </div>
 
     <div id = 'articles' class = "articles">

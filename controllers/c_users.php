@@ -14,11 +14,11 @@ class users_controller extends base_controller {
     public function signup() {
         #echo "This is the signup page";
         # Setup view
-            $this->template->content = View::instance('v_users_signup');
-            $this->template->title   = "Sign Up";
+        $this->template->content = View::instance('v_users_signup');
+        $this->template->title   = "Sign Up";
 
         # Render template
-            echo $this->template;
+        echo $this->template;
     }
 
     public function p_signup() {
@@ -85,14 +85,14 @@ class users_controller extends base_controller {
     public function login($error = NULL) {
         //echo "This is the login page";
         # Setup view
-            $this->template->content = View::instance('v_users_login');
-            $this->template->title   = "Login";
+        $this->template->content = View::instance('v_users_login');
+        $this->template->title   = "Login";
 
-            #error
-            $this->template->content->error = $error;
+        #error
+        $this->template->content->error = $error;
 
         # Render template
-            echo $this->template;
+        echo $this->template;
     }
 
     public function p_login($error = NULL) {

@@ -78,6 +78,7 @@ function stats(text){
     //Calculate the time it will take to read
     var time = Math.round((numwords/wpm),1);
 
+    //Display
     $('#stats').text(numwords + " words. " + time + " minutes to read at " + wpm + " words per minute.");
 };
         
