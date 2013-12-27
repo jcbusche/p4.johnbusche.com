@@ -65,9 +65,9 @@ function reader(toread){
      }, 60000/cpm);
 };
 
-function stats(text, chunksize, speed){
-    var chunksize = parseInt(chunksize);
-    var speed = parseInt(speed);
+function stats(text){
+    var chunksize = parseInt($("#chunksize").val());
+    var speed = parseInt($("#speed").val());
     var words = text.split(" ");
     var numwords = words.length;
 

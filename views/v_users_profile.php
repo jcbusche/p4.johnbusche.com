@@ -54,7 +54,7 @@
 
 				<script>
 					$(".input").change(function(){
-						stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>, $('#chunksize'), $('#speed'));
+						stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>);
 					});
 				</script>
 

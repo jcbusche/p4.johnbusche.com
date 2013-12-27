@@ -57,7 +57,7 @@
 
     <script src = "js/read.js">
         $(".input").change(function() {
-            stats($("#toread").val(), $("chunksize").val(), $("speed").val());
+            stats($("#toread").val());
         });
     </script>
             
