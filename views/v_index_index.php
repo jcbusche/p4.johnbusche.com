@@ -66,5 +66,5 @@
 </div>
 
 <div id = 'display'>Your text will appear here.</div>
-<script src = "js/read.js"></script>
+
 	
