@@ -68,7 +68,7 @@
 						<input type="submit" name="delete" value="Delete"/>
 				</form>
 
-				
+				<script src = "../js/read.js"></script>
 
 			</article>
 
@@ -78,7 +78,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script src = "../js/read.js"></script>
+
 
 	
 
