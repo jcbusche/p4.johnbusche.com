@@ -53,7 +53,7 @@
 
 			<article class = "articles">
 
-			    <p id = "title" onhover = 'console.log("test")'><?=$post['title']?></p> 
+			    <p id = "title" onmouseover = 'console.log("test")'><?=$post['title']?></p> 
 			    			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
