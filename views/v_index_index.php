@@ -6,6 +6,7 @@
 <div id = "explanation" class = "header">
     <p><?=APP_NAME?> is a simple speed reading trainer. You can save text from articles to read later, or you can try it out without saving below.  Just pick how many words you want to be displayed in a chunk and how many chunks you want to be shown per minute.</p>
 </div>
+<br><br>
 
 <div id = 'text-input' class = 'articles'>
     <form >
