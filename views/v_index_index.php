@@ -4,7 +4,7 @@
         <h1>Welcome to <?=APP_NAME?><?php if($user) echo ', '.$user->first_name; ?></h1>
 </div>
 <div id = "explanation" class = "header">
-    <p><?=APP_NAME?> is a simple speed reading trainer. You can save text from articles to read later, or you can try it out without saving below.  Just pick how many words you want to be displayed in a chunk and how many chunks you want to be shown per minute.</p>
+    <h2><?=APP_NAME?> is a simple speed reading trainer. You can save text from articles to read later, or you can try it out without saving below.  Just pick how many words you want to be displayed in a chunk and how many chunks you want to be shown per minute.</h2>
 </div>
 <br><br>
 
