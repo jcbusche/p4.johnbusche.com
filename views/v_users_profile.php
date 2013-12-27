@@ -54,7 +54,7 @@
 	    <?php foreach($posts_reverse as $post):?> 
 
 
-			<article class = "articles">
+			<article>
 
 			    <p id = "title" onmouseover = 'stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)'><?=$post['title']?></p> 		  		   
 

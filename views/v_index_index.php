@@ -7,8 +7,8 @@
     <p><?=APP_NAME?> is a simple speed reading trainer. You can save text from articles to read later, or you can try it out without saving below.  Just pick how many words you want to be displayed in a chunk and how many chunks you want to be shown per minute.</p>
 </div>
 
-<div id = 'text-input' class = 'quickinput'>
-    <form class = "articles">
+<div id = 'text-input' class = 'articles'>
+    <form >
         <p id = "stats"></p>
         <br><br>
         <textarea class = "input" id = 'toread'  rows = "10" cols = "50" required placeholder = "Place the text for your article here"></textarea>
