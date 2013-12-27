@@ -1,6 +1,6 @@
 <?php if($user): ?>
 	<div id = 'title' class = "header">
-    	<h2>Welcome to your profile, <?=$user->first_name?>.  Here you can view and delete your readings.</h2>
+    	<h2>Welcome to your profile, <?=$user->first_name?>.  Here you can view and delete your readings. Hover over an article title to see how long it is and how long it will take you to read with your current options.</h2>
     </div>
 
     <div id = 'articles' class = "input">
@@ -45,6 +45,7 @@
 			</select>
 
 		</form>
+		<p id = 'stats'></p>
 
 
 	    <?php $posts_reverse = array_reverse($posts); ?>
@@ -52,15 +53,8 @@
 
 			<article>
 
-				<script>
-					$(".input").change(function(){
-						stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>);
-					});
-				</script>
-
-
-			    <p><?=$post['title']?></p> 
-			    <p id = 'stats'></p>			  		   
+			    <p id = "title" onhover = 'stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)' ><?=$post['title']?></p> 
+			    			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>

@@ -65,19 +65,19 @@ function reader(toread){
      }, 60000/cpm);
 };
 
+
 function stats(text){
+    //Displays the length of article and time it will tkae to read with the current chunksize and speed
+
     var chunksize = parseInt($("#chunksize").val());
     var speed = parseInt($("#speed").val());
     var words = text.split(" ");
     var numwords = words.length;
+    var wpm = speed*chunksize;
 
-    var time = numwords/chunksize/speed;
-    console.log(time);
-    console.log(chunksize);
-    console.log(speed);
+    //Calculate
+    var time = numwords/wpm;
 
-    console.log(numwords + " words. " + time + " minutes to read.");
-
-    $('#stats').text(numwords + " words. " + time + " minutes to read.");
+    $('#stats').text(numwords + " words. " + time + " minutes to read at " + wpm " words per minute.");
 };
         
