@@ -52,19 +52,12 @@
 /* CONTENTS */
 
 body {
-    /*max-width: 600px;*/
-    /*border: 1px solid black;*/
     margin: 0 auto;
     margin-right: 4em;
     margin-left: 50px;
     margin-top: 20px;
 
 
-}
-.articles {
-    background-color: #EBEBEB;
-    width: 50%;
-    float: left;
 }
 
 #explanation{
@@ -77,6 +70,18 @@ body {
 
 
 #display{
+    width: 50%;
+    float: right;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.quickinput{
+    width: 50%;
+    float: left; 
+}
+
+#quickdisplay{
     width: 50%;
     float: right;
     text-align: center;
