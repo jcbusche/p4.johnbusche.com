@@ -51,9 +51,9 @@
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
 
-			<article>
+			<article class = "articles">
 
-			    <p id = "title" onhover = 'stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)' ><?=$post['title']?></p> 
+			    <p id = "title" onhover = 'console.log("test")'><?=$post['title']?></p> 
 			    			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
@@ -78,8 +78,7 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-	<script src = "../js/read.js">
-	</script>
+	<script src = "../js/read.js"></script>
 
 	
 

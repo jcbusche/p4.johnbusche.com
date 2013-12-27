@@ -8,7 +8,7 @@
 </div>
 
 <div id = 'text-input' class = 'input'>
-    <form>
+    <form class = "articles">
         <p id = "stats"></p>
         <br><br>
         <textarea class = "input" id = 'toread'  rows = "10" cols = "50" required placeholder = "Place the text for your article here"></textarea>
