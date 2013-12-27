@@ -73,11 +73,10 @@ function stats(text){
     var speed = parseInt($("#speed").val());
     var words = text.split(" ");
     var numwords = words.length;
-    var wpm = speed*chunksize;
 
     //Calculate
-    var time = numwords/wpm;
+    var time = numwords/chunksize/speed;
 
-    $('#stats').text(numwords + " words. " + time + " minutes to read at " + wpm " words per minute.");
+    $('#stats').text(numwords + " words. " + time + " minutes to read a.");
 };
         
