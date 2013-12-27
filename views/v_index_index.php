@@ -7,7 +7,7 @@
     <p><?=APP_NAME?> is a simple speed reading trainer. You can save text from articles to read later, or you can try it out without saving below.  Just pick how many words you want to be displayed in a chunk and how many chunks you want to be shown per minute.</p>
 </div>
 
-<div id = 'text-input' class = 'input'>
+<div id = 'text-input' class = 'quickinput'>
     <form class = "articles">
         <p id = "stats"></p>
         <br><br>
@@ -65,6 +65,6 @@
             
 </div>
 
-<div id = 'display'>Your text will appear here.</div>
+<div id = 'quickdisplay'>Your text will appear here.</div>
 
 	
