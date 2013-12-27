@@ -11,10 +11,10 @@
     <form>
         <p id = "stats"></p>
         <br><br>
-        <textarea class = 'input' id = 'toread'  rows = "10" cols = "50" required placeholder = "Place the text for your article here"></textarea>
+        <textarea class = "input" id = 'toread'  rows = "10" cols = "50" required placeholder = "Place the text for your article here"></textarea>
         <br><br>
         <label for = "chunksize">Words per chunk</label>
-        <select class = 'input' id = "chunksize">
+        <select class = "input" id = "chunksize">
             <option value= 1 selected >1</option>
             <option value= 2 > 2 </option>
             <option value= 3 > 3 </option>
@@ -54,7 +54,7 @@
         <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!' onClick = 'reader($("#toread").val())'>
     </form>
 
-    
+
     <script src = "js/read.js">
         $(".input").change(function() {
             stats($("#toread").val(), $("chunksize").val(), $("speed").val());
