@@ -71,6 +71,8 @@ function stats(text, chunksize, speed){
 
     var time = numwords/(chunksize*speed);
 
+    console.log(numwords + " words. " + time + " minutes to read.");
+
     $('#stats').text(numwords + " words. " + time + " minutes to read.");
 };
         
