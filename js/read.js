@@ -68,15 +68,14 @@ function reader(toread){
 
 function stats(text){
     //Displays the length of article and time it will tkae to read with the current chunksize and speed
-
+    
     var chunksize = parseInt($("#chunksize").val());
     var speed = parseInt($("#speed").val());
     var words = text.split(" ");
     var numwords = words.length;
 
-    //Calculate
     var time = numwords/chunksize/speed;
 
-    $('#stats').text(numwords + " words. " + time + " minutes to read a.");
+    $('#stats').text(numwords + " words. " + time + " minutes to read.");
 };
         
