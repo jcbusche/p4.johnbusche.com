@@ -53,15 +53,16 @@
             
         <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!' onClick = 'reader($("#toread").val())'>
     </form>
-        
+
+    
+    <script src = "js/read.js">
+        $(".input").change(function() {
+            stats($("#toread").val(), $("chunksize").val(), $("speed").val());
+        });
+    </script>
             
 </div>
 
 <div id = 'display'>Your text will appear here.</div>
 
 	
-<script src = "js/read.js">
-    $(".input").change(function() {
-        stats($("#toread").val(), $("chunksize").val(), $("speed").val());
-    });
-</script>
