@@ -76,7 +76,7 @@ function stats(text){
     var wpm = chunksize*speed;
 
     //Calculate the time it will take to read
-    var time = numwords/wpm;
+    var time = Math.round((numwords/wpm),1);
 
     $('#stats').text(numwords + " words. " + time + " minutes to read at " + wpm " words per minute.");
 };
