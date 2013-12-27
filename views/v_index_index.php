@@ -53,17 +53,18 @@
             
         <input type = 'button' class = 'display-btn' id = 'quick' value = 'READ!' onClick = 'reader($("#toread").val())'>
     </form>
-
-
-    <script src = "js/read.js">
+    <script>
         $(".input").change(function() {
-            stats($("#toread").val());
-            console.log("The options have changed!");
-        });
+                stats($("#toread").val());
+                console.log("The options have changed!");
+            });
     </script>
+
+
+    
             
 </div>
 
 <div id = 'display'>Your text will appear here.</div>
-
+<script src = "js/read.js"></script>
 	
