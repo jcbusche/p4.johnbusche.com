@@ -50,6 +50,7 @@
 
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
+	    <script src = "../js/read.js"></script>
 
 			<article class = "articles">
 
@@ -68,7 +69,7 @@
 						<input type="submit" name="delete" value="Delete"/>
 				</form>
 
-				<script src = "../js/read.js"></script>
+				
 
 			</article>
 
