@@ -3,7 +3,7 @@
     	<h2>Welcome to your profile, <?=$user->first_name?>.  Here you can view and delete your readings. Hover over an article title to see how long it is and how long it will take you to read with your current options.</h2>
     </div>
 
-    <div id = 'articles' class = "input">
+    <div id = 'articles' class = "articles">
 
     	<form>
     		<label for = "chunksize">Words per chunk</label>

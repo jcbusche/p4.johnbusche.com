@@ -61,9 +61,10 @@ body {
 
 
 }
-article {
+.articles {
     background-color: #EBEBEB;
     width: 50%;
+    float: left;
 }
 
 #explanation{
