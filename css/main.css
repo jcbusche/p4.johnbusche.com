@@ -61,11 +61,10 @@ body {
 }
 
 #explanation{
-    width: 50%;
     float:left;
     text-align: left;
     color: #636363;  
-    font-size: 1em; 
+    font-size: 1.3em; 
 }
 
 
