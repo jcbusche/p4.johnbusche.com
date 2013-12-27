@@ -71,7 +71,7 @@ function stats(text, chunksize, speed){
     var words = text.split(" ");
     var numwords = words.length;
 
-    var time = numwords/(chunksize*speed);
+    var time = numwords/chunksize/speed;
     console.log(time);
 
     console.log(numwords + " words. " + time + " minutes to read.");
