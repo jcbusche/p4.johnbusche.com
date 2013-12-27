@@ -69,6 +69,11 @@ body {
 }
 
 
+.articles{
+    width: 50%;
+    float: left; 
+}
+
 #display{
     width: 50%;
     float: right;
@@ -76,14 +81,6 @@ body {
     font-size: 1.7em;
 }
 
-.quickinput{
-    width: 50%;
-    float: left; 
-}
-
-#quickdisplay{
-    width: 50%;
-    float: right;
-    text-align: center;
-    font-size: 1.7em;
+#stats{
+    float:left;
 }
