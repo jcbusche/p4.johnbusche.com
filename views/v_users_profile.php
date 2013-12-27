@@ -45,7 +45,7 @@
 			</select>
 
 		</form>
-		<p id = 'stats'></p>
+		
 
 
 	    <?php $posts_reverse = array_reverse($posts); ?>
@@ -53,8 +53,8 @@
 
 			<article class = "articles">
 
-			    <p id = "title" onmouseover = 'console.log("test")'><?=$post['title']?></p> 
-			    			  		   
+			    <p id = "title" onmouseover = 'stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)'><?=$post['title']?></p> 
+			    <p id = 'stats'></p>		  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
