@@ -65,7 +65,7 @@
 			    <form>
 			    				            
 			        <input type = 'button' id = 'display-btn'  value = 'READ!' onclick = 'reader(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)'/>
-			        <br>
+			    
 				</form>
 				<form action="/readings/r_delete/<?=$post['post_id']?>" method="post">
 						<input type="submit" name="delete" value="Delete"/>
