@@ -67,7 +67,7 @@ function reader(toread){
 
 function stats(text, chunksize, speed){
     var words = text.split(" ");
-    var numwords = words.length();
+    var numwords = words.length;
 
     var time = numwords/(chunksize*speed);
 
