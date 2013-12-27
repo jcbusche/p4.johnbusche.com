@@ -52,6 +52,12 @@
 
 			<article>
 
+				<script>
+					$(".class").change(function(){
+						stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>, $('#chunksize'), $('#speed'));
+					});
+				</script>
+
 
 			    <p><?=$post['title']?></p> 
 			    <p id = 'stats'></p>			  		   
@@ -79,7 +85,6 @@
 	<div id = 'display'>Your text will appear here.</div>
 
 	<script src = "../js/read.js">
-		stats($("#toread").val(), $("chunksize").val(), $("speed").val());
 	</script>
 
 	
