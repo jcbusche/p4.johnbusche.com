@@ -45,17 +45,16 @@
 			</select>
 
 		</form>
-		
+		<p id = 'stats'></p>
 
 
 	    <?php $posts_reverse = array_reverse($posts); ?>
 	    <?php foreach($posts_reverse as $post):?> 
-	    <script src = "../js/read.js"></script>
 
-			<article class = "articles">
+			<article>
 
-			    <p id = "title" onmouseover = 'stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)'><?=$post['title']?></p> 
-			    <p id = 'stats'></p>		  		   
+			    <p id = "title" onhover = 'stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>)' ><?=$post['title']?></p> 
+			    			  		   
 
 			    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
 			        <?=Time::display($post['created'])?>
@@ -79,7 +78,8 @@
 
 	<div id = 'display'>Your text will appear here.</div>
 
-
+	<script src = "../js/read.js">
+	</script>
 
 	
 
