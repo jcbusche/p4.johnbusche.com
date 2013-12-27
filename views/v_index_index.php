@@ -9,7 +9,7 @@
 
 <div id = 'text-input' class = 'input'>
     <form>
-        <label for = 'toread' id = "stats"></label>
+        <p id = "stats"></p>
         <br><br>
         <textarea class = 'input' id = 'toread'  rows = "10" cols = "50" required placeholder = "Place the text for your article here"></textarea>
         <br><br>
