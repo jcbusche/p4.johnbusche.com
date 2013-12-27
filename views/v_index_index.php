@@ -66,6 +66,6 @@
             
 </div>
 
-<div id = 'quickdisplay'>Your text will appear here.</div>
+<div id = 'display'>Your text will appear here.</div>
 
 	
