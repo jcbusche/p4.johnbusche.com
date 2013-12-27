@@ -64,3 +64,23 @@ body {
 article {
     background-color: #EBEBEB;
 }
+
+#explanation{
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #636363;  
+    font-size: 1em; 
+}
+
+.input{
+    width: 50%;
+    float: left; 
+    text-align: center;
+}
+
+#display{
+    width: 50%;
+    float: right;
+    text-align: center;
+    font-size: 1.7em;
+}
