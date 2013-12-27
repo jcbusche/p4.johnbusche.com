@@ -66,6 +66,8 @@ function reader(toread){
 };
 
 function stats(text, chunksize, speed){
+    var chunksize = parseInt(chunksize);
+    var speed = parseInt(speed);
     var words = text.split(" ");
     var numwords = words.length;
 
