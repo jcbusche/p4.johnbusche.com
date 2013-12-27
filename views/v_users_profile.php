@@ -47,6 +47,7 @@
 		</form>
 
 		<p id = 'stats'></p>
+		<br><br>
 		
 
 
