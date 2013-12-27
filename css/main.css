@@ -84,3 +84,7 @@ body {
 #stats{
     float:left;
 }
+
+.header{
+    font-size: 1.3em;
+}
