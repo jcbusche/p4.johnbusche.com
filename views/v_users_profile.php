@@ -7,7 +7,7 @@
 
     	<form>
     		<label for = "chunksize">Words per chunk</label>
-			<select id = "chunksize">
+			<select class = 'input' id = "chunksize">
 			            <option value= 1 selected >1</option>
 			            <option value= 2 > 2 </option>
 			            <option value= 3 > 3 </option>
@@ -20,7 +20,7 @@
 			            <option value= 10 > 10 </option>
 			</select>
 			<label for = "speed">Chunks per minute</label>
-			<select id = "speed">
+			<select class = 'input' id = "speed">
 			            <option value= 60 selected >60</option>
 			            <option value= 70 > 70 </option>
 			            <option value= 80 > 80 </option>
@@ -53,7 +53,7 @@
 			<article>
 
 				<script>
-					$(".class").change(function(){
+					$(".input").change(function(){
 						stats(<?php echo json_encode(str_replace("'", "&#39;", $post['content']))?>, $('#chunksize'), $('#speed'));
 					});
 				</script>
