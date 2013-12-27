@@ -58,6 +58,7 @@
     <script src = "js/read.js">
         $(".input").change(function() {
             stats($("#toread").val());
+            console.log("The options have changed!");
         });
     </script>
             
